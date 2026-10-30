@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudNotes — Simple Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div><p class="eyebrow">YOUR PERSONAL SPACE</p><h1>CloudNotes</h1><p class="sub">A simple place to capture your thoughts.</p></div>
+      <span class="cloud">☁ Notes</span>
+    </header>
+    <section class="editor">
+      <input id="title" maxlength="80" placeholder="Note title" aria-label="Note title">
+      <textarea id="body" rows="5" maxlength="5000" placeholder="Write your note here..." aria-label="Note text"></textarea>
+      <div class="actions"><span id="status" aria-live="polite">Your notes are saved in this browser.</span><button id="save">Save note</button></div>
+    </section>
+    <section class="notes-section"><div class="section-head"><h2>Your notes</h2><span id="count">0 notes</span></div><div id="notes" class="notes"></div></section>
+    <footer>Demo project • Notes are stored in this browser using localStorage.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
